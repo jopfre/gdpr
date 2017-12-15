@@ -43,7 +43,7 @@ var errorHandler = {
 
 gulp.task('styles', function(){
   gulp.src('./src/sass/**/*.scss')
-    .pipe(wait(500)) //to fix Error: File to import not found or unreadable consider reducing delay
+    .pipe(wait(250)) //to fix Error: File to import not found or unreadable consider reducing delay
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: ['./src/sass']
